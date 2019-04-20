@@ -1320,7 +1320,7 @@ int q6asm_audio_client_buf_alloc_contiguous(unsigned int dir,
 	size_t len;
 	int bytes_to_alloc;
 
-	if (!(ac) || ((dir != IN) && (dir != OUT))) {
+	if (!(ac) || ((dir != IN) && (dir != OUT)) || bufcnt==0) {
 		pr_err("%s: ac %pK dir %d\n", __func__, ac, dir);
 		return -EINVAL;
 	}
