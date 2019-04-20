@@ -77,6 +77,11 @@ config ARCH_MSM8953_BOOT_ORDERING
 	  greater control over the probe ordering such that
 	  overall boot time can be reduced.
 
+config HY_PROJECT
+       string "Default project names"
+       help
+       Hymost project name.
+
 config ARCH_MSM8937
 	bool "Enable support for MSM8937"
 	select CPU_V7

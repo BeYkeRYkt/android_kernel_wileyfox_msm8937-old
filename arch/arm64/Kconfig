@@ -825,6 +825,13 @@ config FORCE_MAX_ZONEORDER
 	  However for 4K, we choose a higher default value, 11 as opposed to 10, giving us
 	  4M allocations matching the default size used by generic code.
 
+#TQY
+config ARCH_MSM8937_X50
+	bool "hy msm8937_x50 usb"
+	depends on ARCH_MSM8937
+	help
+	   hy project x50 pcb
+
 config UNMAP_KERNEL_AT_EL0
 	bool "Unmap kernel when running in userspace (aka \"KAISER\")" if EXPERT
 	default y
